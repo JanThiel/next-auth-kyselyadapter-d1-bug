@@ -15,7 +15,7 @@ const kyselyDb = new KyselyAuth<Database>({
 const executor = kyselyDb.getExecutor();
 const adapter = executor.adapter;
 
-console.log("isTypeOf SqliteAdapter", adapter instanceof SqliteAdapter ? "true" : "false");
+console.log("is D1Dialect KyseAuth Adapter instanceof SqliteAdapter", adapter instanceof SqliteAdapter ? "true" : "false");
 
 // For more information on each option (and a full list of options) go to
 // https://next-auth.js.org/configuration/options
